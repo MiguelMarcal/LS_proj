@@ -4,6 +4,7 @@ In this project, we will be using commander, node and pg-promisse to
 retrieve data about users from GitHub API and store the data in a premade postgreSQL DB, using command line arguments.
 
 It will be mandatory to have a postgresSQL DB with the folowing creation query ready to use:
+```
 		-- Droping the tables
 		--
 		-- DROP TABLE gh_user CASCADE; (To drop the DB if you choose to)
@@ -17,7 +18,7 @@ It will be mandatory to have a postgresSQL DB with the folowing creation query r
 		    CONSTRAINT pk_gh_user
 		    PRIMARY KEY(gh_name)
 		);
-
+```
 The connection string used in pg-promise (Line 3 from "psql.js") must be changed to your Database parameters. (postgresql://'username':'password'@localhost:'port'/'name'
 
 Github API requires a personal acess TOKEN to alow a reasonable amount of requests to its API, as it is possible to see in 'gh.js' lines 10 - 26 - 37 , the word 'Personal Token' in the fetch headers must be changed to a personal github token.
