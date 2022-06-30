@@ -1,5 +1,5 @@
 # LS_proj
-Repository for lovelystay internship Project
+Repository for lovelystay internship Project.
 In this project, we will be using commander, node and pg-promisse to 
 retrieve data about users from GitHub API and store the data in a premade postgreSQL DB, using command line arguments.
 
