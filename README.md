@@ -19,9 +19,9 @@ It will be mandatory to have a postgresSQL DB with the folowing creation query r
 		    PRIMARY KEY(gh_name)
 		);
 ```
-The connection string used in pg-promise (Line 3 from "psql.js") must be changed to your Database parameters. (postgresql://'username':'password'@localhost:'port'/'name'
+The connection string used in pg-promise (Line 3 from "psql.js") must be changed to your Database parameters. (**postgresql://'username':'password'@localhost:'port'/'name'**)
 
-Github API requires a personal acess TOKEN to alow a reasonable amount of requests to its API, as it is possible to see in 'gh.js' lines 10 - 26 - 37 , the word 'Personal Token' in the fetch headers must be changed to a personal github token.
+Github API requires a personal acess TOKEN to alow a reasonable amount of requests to its API, as it is possible to see in 'gh.js' lines 10 - 26 - 37 , **the word 'Personal Token' in the fetch headers must be changed to a personal github token**.
 
 
 This Command Line Interface Aplication Can be ran with 'node main.js' and a simple explanation of how to use this tool will be displayed
