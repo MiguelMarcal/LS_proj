@@ -28,20 +28,18 @@ This Command Line Interface Aplication Can be ran with 'node main.js' and a simp
 
 It has 7 commands, here is what they do:
 
->
->	-V|--version 	--> Displays the version number
->	
->	-h|--help	--> Displays the help menu
->	
->	search|s <username> 	--> Dysplays the location of the user with said username and saves it to the DataBase
->	
->	find|f		--> Finds and displays every user on the DB with location equal/similiar to the given location
->	
->	all|a	--> Displays every user and correspondent location stored in the DataBase
->	
->	languages|l <username>	--> Displays every repo from the given user and the languages used in it
->	
->	help <command>	--> Displays a simple explanation of how the inputed command works
->	
-
-
+```
+	-V|--version 	--> Displays the version number
+	
+	-h|--help	--> Displays the help menu
+	
+	search|s <username> 	--> Dysplays the location of the user with said username and saves it to the DataBase
+	
+	find|f		--> Finds and displays every user on the DB with location equal/similiar to the given location
+	
+	all|a	--> Displays every user and correspondent location stored in the DataBase
+	
+	languages|l <username>	--> Displays every repo from the given user and the languages used in it
+	
+	help <command>	--> Displays a simple explanation of how the inputed command works
+```
