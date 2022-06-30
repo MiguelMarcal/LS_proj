@@ -14,7 +14,7 @@ program
 program
   .command("search <username>")
   .alias("s")
-  .description("Search for a GitHub user's location")
+  .description("Display a GitHub user's location")
   .action( async (username) => { 
     var local = await GH_export.Bgh_info(username);        
     var exists = await PSQL_export.check_user_db(username)
@@ -35,7 +35,7 @@ program
 program
   .command("find <location>")
   .alias("f")
-  .description("Find every user in the DB from the given location")
+  .description("Display every user in the DB from the given location")
   .action( async (location) => {
     await PSQL_export.get_user_location(location)
     PSQL_export.close_db_connection();
@@ -45,7 +45,7 @@ program
 program
   .command("all")
   .alias("a")
-  .description("find every user in the DB")
+  .description("Display every user in the DB")
   .action( async () => {
     await PSQL_export.read_all()
     PSQL_export.close_db_connection();
@@ -55,7 +55,7 @@ program
 program
   .command("languages <username>")
   .alias("l")
-  .description("See every repo from the given username")
+  .description("Display repo/languages used from the given username")
   .action((username) => {
     GH_export.user_Planguages(username);
   })
