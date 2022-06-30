@@ -24,7 +24,7 @@ function user_Planguages(name){
   fetch(`https://api.github.com/users/${name}/repos`, {
     method: "GET",
     headers: {
-      Authorization:`token Personal Token`
+      Authorization:`token Personal Token`  // Here it is used 'token personaltoken' because of limitations by the github API
     }
   })
   .then(response => response.json())
@@ -35,7 +35,7 @@ function user_Planguages(name){
           fetch('https://api.github.com/repos/' + data[i].full_name + '/languages', {
             method: "GET",
             headers: {
-              Authorization:`token Personal Token`
+              Authorization:`token Personal Token`  // Here it is used 'token personaltoken' because of limitations by the github API
              }
           })
           .then(response => response.json())
