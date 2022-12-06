@@ -33,7 +33,7 @@ It has 7 commands, here is what they do:
 	
 	-h|--help	 	--> Displays the help menu
 	
-	search|s <username> 	--> Dysplays the location of the user with said username and saves it to the DataBase
+	search|s <username> 	--> Displays the location of the user with said username and saves it to the DataBase
 	
 	find|f			--> Finds and displays every user on the DB with location equal/similiar to the given location
 	
